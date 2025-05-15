@@ -263,11 +263,20 @@
   const modalTitle = document.getElementById('modalTitle');
   const modalImage = document.getElementById('modalImage');
   const modalDesc = document.getElementById('modalDesc');
-  
+
   document.getElementById('navToggle').addEventListener('click', function () {
     document.getElementById('mainNav').classList.toggle('show');
   });
-
+// 新增：点击菜单项后自动关闭菜单（仅移动端）
+  const navLinks = document.querySelectorAll('#mainNav .nav__link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      const nav = document.getElementById('mainNav');
+      if (window.innerWidth <= 768) {
+        nav.classList.remove('show');
+      }
+    });
+  });
 
   function openDetail(card) {
     const title = card.dataset.title;
