@@ -379,6 +379,7 @@ body {
 .detail-modal {
   position: fixed; top: 0; left: 0;
   width: 100%; height: 100%;
+  overflow-y: auto;             
   background-color: rgba(0,0,0,0.6);
   display: none;
   justify-content: center;
@@ -396,6 +397,7 @@ body {
   position: relative;
   animation: fadeInScale 0.3s ease;
   text-align: left;
+  overflow-wrap: break-word;
 }
 
 .detail-modal__close {
@@ -427,4 +429,19 @@ body {
 /* 确保 header 默认是可见的 */
 .header {
   transition: transform 0.3s ease;
+}
+@media screen and (max-width: 500px) {
+  .detail-modal__content {
+    padding: 1rem;
+    font-size: 14px;
+  }
+  .detail-modal__close {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav__link {
+    font-size: 14px;
+    margin: 0.5rem;
+  }
 }
