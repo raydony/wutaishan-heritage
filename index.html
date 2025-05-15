@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>五台山非遗数字平台</title>
+
+  <!-- Favicon 图标 -->
+  <link rel="shortcut icon" href="assets/img/wutaishan-icon.png" type="image/x-icon">
+
+  <!-- Remix Icon 图标库 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+  <!-- 主样式文件 -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- 页眉导航 -->
+  <header class="header" id="header">
+    <div class="header__container">
+      
+      <!-- 左侧 Logo 图像 -->
+      <div class="header__logo">
+        <img src="assets/img/only_black_text_transparent.png" alt="五台山非遗" />
+      </div>
+  
+      <!-- 中间导航栏 -->
+      <nav class="nav">
+        <a href="#home" class="nav__link">首页</a>
+        <a href="#projects" class="nav__link">非遗项目</a>
+        <a href="#media" class="nav__link">资料中心</a>
+        <a href="#join" class="nav__link">我要参与</a>
+        <a href="#contact" class="nav__link">联系我们</a>
+      </nav>
+  
+    </div>
+  </header>
+
+
+  <!-- 首页模块 -->
+<!-- 首页封面 -->
+<section class="home__hero" id="home">
+    <div class="home__overlay">
+      <div class="home__content">
+        <h1 class="home__title">五台山非物质文化遗产</h1>
+        <p class="home__description">
+          探索千年佛教胜地，记录珍贵的非物质文化遗产。<br>
+          本平台致力于数字化保护与传播五台山的文化瑰宝。
+        </p>
+        <a href="#projects" class="home__button">查看非遗项目</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 非遗项目展示 -->
+  <section class="featured section" id="projects">
+    <h2 class="section__title">代表性非遗项目</h2>
+    <div class="featured__container grid">
+    
+    <!-- 五台梵乐 -->
+    <div class="featured__item hover-scale" data-title="五台梵乐" data-img="assets/img/project-music.jpg"
+        data-desc="保留自唐宋的佛教音乐体系，以钹、鼓、法号等乐器演奏，在法会中营造庄严氛围。" onclick="openDetail(this)">
+        <img src="assets/img/project-music.jpg" alt="五台梵乐">
+        <h3>五台梵乐</h3>
+        <p>
+            保留自唐宋的佛教音乐体系，以钹、鼓、法号等乐器演奏，在法会中营造庄严氛围。
+        </p>
+    </div>
+    
+    <!-- 黄庙建筑技艺 -->
+    <div class="featured__item hover-scale" data-title="黄庙建筑技艺" data-img="assets/img/project-crafts.jpg"
+        data-desc="融合藏传佛教风格的建筑技艺，展现汉藏文化交融，代表性建筑如塔院寺、大白塔等。" onclick="openDetail(this)">
+        <img src="assets/img/project-crafts.jpg" alt="黄庙建筑技艺">
+        <h3>黄庙建筑技艺</h3>
+        <p>
+            融合藏传佛教风格的建筑技艺，展现汉藏文化交融，代表性建筑如塔院寺、大白塔等。
+        </p>
+    </div>
+
+      <!-- 五台山佛乐 -->
+      <!-- 五台山佛乐 -->
+      <div class="featured__item hover-scale"
+          data-title="五台山佛乐"
+          data-img="assets/img/fotle.jpg"
+          data-desc="源于印度佛教音乐，融合中国传统旋律，发展出独特的佛教仪式音乐，常用于独唱、齐唱与轮唱法会中。"
+          onclick="openDetail(this)">
+      <img src="assets/img/fotle.jpg" alt="五台山佛乐">
+      <h3>五台山佛乐</h3>
+      <p>
+          源于印度佛教音乐，融合中国传统旋律，发展出独特的佛教仪式音乐，常用于独唱、齐唱与轮唱法会中。
+      </p>
+      </div>
+
+
+  
+      <!-- 晋剧（山西梆子） -->
+    <div class="featured__item hover-scale" data-title="晋剧（山西梆子）" data-img="assets/img/jinju.jpg"
+        data-desc="山西地方戏曲代表剧种，唱腔高亢激昂，是庙会、节庆中的常见演出形式，深受百姓喜爱。" onclick="openDetail(this)">
+        <img src="assets/img/jinju.jpg" alt="晋剧">
+        <h3>晋剧（山西梆子）</h3>
+        <p>
+            山西地方戏曲代表剧种，唱腔高亢激昂，是庙会、节庆中的常见演出形式，深受百姓喜爱。
+        </p>
+    </div>
+  
+    <!-- 五台山剪纸艺术 -->
+    <div class="featured__item hover-scale" data-title="五台山剪纸艺术" data-img="assets/img/jianzhi.jpg"
+        data-desc="风格细腻，常用于庙会、佛像装饰与节庆布置，承载着民间信仰和艺术审美。" onclick="openDetail(this)">
+        <img src="assets/img/jianzhi.jpg" alt="五台山剪纸艺术">
+        <h3>五台山剪纸艺术</h3>
+        <p>
+            风格细腻，常用于庙会、佛像装饰与节庆布置，承载着民间信仰和艺术审美。
+        </p>
+    </div>
+
+    <!-- 佛光寺模型制作技艺 -->
+    <div class="featured__item hover-scale" data-title="佛光寺模型制作技艺" data-img="assets/img/foguangsi_model.jpg"
+        data-desc="模型还原中国现存最早唐代木结构建筑的精髓，展现古代高超木构技艺和佛教建筑理念。" onclick="openDetail(this)">
+        <img src="assets/img/foguangsi_model.jpg" alt="佛光寺模型技艺">
+        <h3>佛光寺模型制作技艺</h3>
+        <p>
+            模型还原中国现存最早唐代木结构建筑的精髓，展现古代高超木构技艺和佛教建筑理念。
+        </p>
+    </div>
+    </div>
+  </section>
+
+  <section class="featured section" id="pusho-heritage">
+    <h2 class="section__title">五台山普寿寺非遗项目</h2>
+    <div class="featured__container">
+  
+    <!-- 文殊传说 -->
+    <div class="featured__item hover-scale" data-title="文殊传说" data-img="assets/img/wenshu_legend.jpg"
+        data-desc="讲述文殊菩萨在五台山的传奇故事，体现佛教文化的深厚底蕴。" onclick="openDetail(this)">
+        <img src="assets/img/wenshu_legend.jpg" alt="文殊传说">
+        <h3>文殊传说</h3>
+        <p>
+            讲述文殊菩萨在五台山的传奇故事，体现佛教文化的深厚底蕴。
+        </p>
+    </div>
+
+    <!-- 梵呗唱诵 -->
+    <div class="featured__item hover-scale" data-title="梵呗唱诵" data-img="assets/img/fanbei_chanting.jpg"
+        data-desc="佛教仪式中的唱诵音乐，旋律悠扬庄严，体现佛教情感与仪轨。" onclick="openDetail(this)">
+        <img src="assets/img/fanbei_chanting.jpg" alt="梵呗唱诵">
+        <h3>梵呗唱诵</h3>
+        <p>
+            佛教仪式中的唱诵音乐，旋律悠扬庄严，体现佛教情感与仪轨。
+        </p>
+    </div>
+
+    </div>
+  </section>
+
+  <section class="new section" id="media">
+    <h2 class="section__title">图文与视频资料</h2>
+    <div class="media__container grid">
+  
+      <!-- 视频卡片 -->
+      <div class="media__item">
+        <video src="assets/media/music.mp4" controls></video>
+        <p>五台山佛教音乐演奏现场</p>
+      </div>
+  
+      <!-- PDF 卡片 -->
+      <div class="media__item pdf">
+        <img src="assets/img/pdf-icon.png" alt="PDF图标" class="pdf__icon">
+        <h3>《五台山非遗研究报告》</h3>
+        <a class="pdf__link" href="assets/docs/heritage-report.pdf" target="_blank">点击下载 PDF</a>
+      </div>
+  
+    </div>
+  </section>
+  
+
+<!-- 加入我们模块 -->
+<section class="join section" id="join">
+    <h2 class="section__title">我要参与</h2>
+    <div class="join__wrapper">
+  
+      <p class="join__text">
+        如果你热爱非遗文化，欢迎加入我们的志愿团队、研究网络或合作项目，<br>
+        和我们一起守护五台山的文化记忆。
+      </p>
+  
+      <form class="join__form">
+        <div class="form__group">
+          <input type="text" placeholder="姓名" required>
+          <input type="email" placeholder="邮箱" required>
+        </div>
+        <textarea placeholder="留言或合作意向" rows="4" required></textarea>
+        <button type="submit" class="join__btn">提交</button>
+      </form>
+  
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2 class="section__title">关于我们</h2>
+    <div class="about__content">
+      <p>
+        五台山非遗数字平台致力于保护和传播五台山地区的非物质文化遗产，
+        通过数字化手段记录音乐、建筑、信仰、习俗等多方面文化。
+        我们由文化研究者、佛教工作者和志愿者组成，共同守护千年文明。
+      </p>
+      <p>
+        本平台支持公众参与、学术合作与非遗展示，欢迎您与我们联系，加入传承的旅程。
+      </p>
+      <p>
+        邮箱：raydonment@gmail.com
+      </p>
+    </div>
+  </section>
+    <!-- 联系我们模块 -->
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <p>&copy; 2025 五台山非遗数字平台</p>
+  </footer>
+
+
+
+
+
+
+<!-- 模态弹窗容器 -->
+<div class="detail-modal" id="detailModal">
+  <div class="detail-modal__content">
+    <span class="detail-modal__close" id="modalClose">&times;</span>
+    <h2 id="modalTitle">标题</h2>
+    <img id="modalImage" src="" alt="详情图">
+    <p id="modalDesc">描述内容</p>
+  </div>
+</div>
+
+
+<script>
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('.header');
+      header.classList.toggle('scrolled', window.scrollY > 10);
+    });
+
+    window.addEventListener('scroll', function () {
+    const header = document.querySelector('.header');
+    const currentScroll = window.scrollY;
+
+    // 控制隐藏显示
+    if (currentScroll > lastScrollTop && currentScroll > 100) {
+        header.classList.add('header--hidden');
+    } else {
+        header.classList.remove('header--hidden');
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+
+
+
+
+
+
+
+    const modal = document.getElementById('detailModal');
+    const closeBtn = document.getElementById('modalClose');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalImage = document.getElementById('modalImage');
+    const modalDesc = document.getElementById('modalDesc');
+
+    function openDetail(card) {
+        const title = card.dataset.title;
+        const img = card.dataset.img;
+        const desc = card.dataset.desc;
+
+        modalTitle.textContent = title;
+        modalImage.src = img;
+        modalImage.alt = title;
+        modalDesc.textContent = desc;
+
+        modal.style.display = 'flex';
+    }
+    closeBtn.onclick = () => modal.style.display = 'none';
+    window.onclick = e => { if (e.target === modal) modal.style.display = 'none'; };
+
+    let lastScrollTop = 0;
+
+   
+  </script>
+
+
+
+</body>
+</html>
+
