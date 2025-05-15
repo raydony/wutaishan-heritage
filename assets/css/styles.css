@@ -137,40 +137,54 @@ body {
     padding: 0.6rem 1.5rem;
   }
 
+ 
+
+  /* 隐藏导航栏默认状态 */
+  .nav {
+    display: none !important; /* 强制隐藏默认导航 */
+    flex-direction: column;
+    width: 100%;
+    background-color: #882f26;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+  }
+
+  /* 点击按钮后显示导航栏 */
+  .nav.show {
+    display: flex !important; /* 显示导航 */
+  }
+ /* 菜单按钮样式（移动端可见） */
   .nav-toggle {
-    display: block;
+    display: flex !important;
     background: none;
     border: none;
     font-size: 24px;
     color: white;
     cursor: pointer;
   }
-
-  .nav {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #882f26;
-    text-align: center;
-    padding: 1rem 0;
-  }
-
-  .nav.show {
-    display: flex;
-  }
-
-  .nav__link {
-    font-size: 14px;
-    margin: 0.5rem 0;
-  }
-
+  /* 页眉容器排列为一行，logo 左侧，按钮右侧 */
   .header__container {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
   }
+  
+  .nav__link {
+    font-size: 14px;
+    margin: 0.5rem 0;
+    color: white;
+    text-decoration: none;
+  }
 
+  
+
+  /* 模态内容样式（移动端） */
   .detail-modal__content {
     padding: 1rem;
     font-size: 14px;
@@ -375,9 +389,6 @@ body {
 }
 
 
-.nav {
-    justify-content: center;
-  }
 /* 菜单按钮隐藏（桌面端） */
 .nav-toggle {
   display: none;
@@ -477,25 +488,4 @@ body {
   transform: translateY(-100%);
   transition: transform 0.3s ease;
 }
-
-
-
-  .header__container {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
-
-  .nav__link {
-    font-size: 14px;
-    margin: 0.5rem;
-  }
-
-  .detail-modal__content {
-    padding: 1rem;
-    font-size: 14px;
-    min-height: 60vh;
-  }
-
-  
 
