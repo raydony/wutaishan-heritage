@@ -445,3 +445,54 @@ body {
     margin: 0.5rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .nav {
+    position: static;
+    transform: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .header__container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .nav__link {
+    font-size: 14px;
+    margin: 0.5rem;
+  }
+
+  .detail-modal__content {
+    padding: 1rem;
+    font-size: 14px;
+    min-height: 60vh;
+  }
+
+  .detail-modal__close {
+    font-size: 20px;
+  }
+}
+
+.detail-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
